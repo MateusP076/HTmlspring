@@ -10,21 +10,28 @@
   <link rel="stylesheet" th:href="@{/css/estilo.css}" type="text/css" media="all">
 <!--    <link th:rel="stylesheet" href="style.css">-->
 </head>
-<body >
+<body>
     <div>
         <h2>Bem Vindo</h2>
         <br>
-        <p id="teste" >Coisas sla</p>
-        <p th:Text="${mensagemcontroler}"></p>
-   <form th:action="@{/create}" th:object="${pessoa}" method="post">
-        Nome: <input type="text" name="nome" id="nome" >
-        <br><br>
-        Email: <input type="text" name="email" id="email">
-        <br><br>
-        Usuario: <input type="text" name="user" id="user" >
-        <br><br>
-        <button type="submit" name="button"  >Enviar</button>
-    </form>
+        <p id="teste">Coisas sla</p>
+        <p th:text="${mensagemcontroler}"></p>
+
+        <form th:action="@{/create}" th:object="${pessoa}" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <br><br>
+
+            <label for="user">Usuário:</label>
+            <input type="text" name="user" id="user">
+            <br><br>
+
+            <button type="submit" name="button">Enviar</button>
+        </form>
     </div>
 </body>
 </html>

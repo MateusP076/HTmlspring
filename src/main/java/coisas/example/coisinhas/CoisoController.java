@@ -21,8 +21,9 @@ public class CoisoController {
         System.out.println("Email" + coisa.email);
         System.out.println("Usuario" + coisa.usuario);
         model.addAttribute("coisa", coisa);
-        return "candidate/info";
+        return "candidate/info";    
     }
+    
     record Coisa(String nome, String email, String usuario) {}
 }
 
