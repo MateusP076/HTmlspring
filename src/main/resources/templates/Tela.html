@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizar Pessoa</title>
+  <link rel="stylesheet" th:href="@{/css/estilo.css}" type="text/css">
+</head>
+<body>
+<div>
+  <h2>Detalhes da Pessoa</h2>
+  <p th:text="${mensagemcontroler}">Mensagem exibida aqui</p>
+  <hr>
+
+  <p><strong>Nome:</strong> <span name="nome" th:text="${coisa.nome()}"></span></p>
+  <p><strong>Email:</strong> <span  name="email" th:text="${coisa.email()}"></span></p>
+  <p><strong>Usuário:</strong> <span name="usuario" th:text="${coisa.usuario()}"></span></p>
+
+  <a th:action="@{/teste}" th:href="@{teste}" style="display:inline-block;margin-top:20px;">Voltar</a>
+
+</div>
+</body>
+</html>
