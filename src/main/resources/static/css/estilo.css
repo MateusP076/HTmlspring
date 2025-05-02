@@ -1,6 +1,7 @@
 /* estilo.css */
 
 body {
+       
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -12,6 +13,10 @@ body {
 }
 
 div {
+    background-image: url(../img/Desespero.webp); /* Caminho da imagem */
+    background-size: cover;         /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat;   /* Evita repetição */
+    background-position: center; 
     background-color: #fff;
     padding: 30px 40px;
     margin-top: 50px;
