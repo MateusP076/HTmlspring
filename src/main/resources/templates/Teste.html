@@ -17,17 +17,18 @@
         <p id="teste">Testes maneiros</p>
         <p th:text="${mensagemcontroler}"></p>
 
-        <form th:action="@{/create}" th:object="${pessoa}" method="post">
+        <form th:action="@{/coisas/criar}" th:object="${CoisasModel}" method="post">
+            <input type="hidden" name="id" id="id" >
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" >
             <br><br>
 
             <label for="email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="example@hotmail.com">
+            <input type="text" name="email" id="email" placeholder="example@hotmail.com" >
             <br><br>
 
             <label for="usuario">Usuário:</label>
-            <input type="text" name="usuario" id="usuario">
+            <input type="text" name="usuario" id="usuario" >
             <br><br>
 
             <button type="submit" name="button">Enviar</button>
